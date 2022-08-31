@@ -21,7 +21,6 @@ void First_login(){
   server.on("/get", HTTP_GET, [] (AsyncWebServerRequest *request) {
   String inputMessage,inputMessage1;
   String inputParam;
-    // GET input1 value on <ESP_IP>/get?input1=<inputMessage>
     if (request->hasParam(PARAM_INPUT_1)) {
       if (request->hasParam(PARAM_INPUT_2)){
       inputMessage = request->getParam(PARAM_INPUT_1)->value();
